@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "198222666676",
+    "project_id": "citefinder",
+    "storage_bucket": "citefinder.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198222666676:android:302720f99e7e95c4ebf0e1",
+        "android_client_info": {
+          "package_name": "com.DopeTech.citefinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198222666676-mc5maaa0sqlqui96jus2094shnir796f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.DopeTech.citefinder",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "198222666676-cpkpgbq1pvi24vrgr438si0djogg6hmg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOFGla93B838ES2u5KQ3vOyieG-XITokI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198222666676-cpkpgbq1pvi24vrgr438si0djogg6hmg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "198222666676-hcgh1b6fmvtdf0as6omdk5jtmp3r9qci.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.DopeTech.citefinder"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

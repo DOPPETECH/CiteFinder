@@ -1,0 +1,47 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /hostels/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /hostel_rooms/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /bookings/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /chats/{document} {
+      allow create: if /databases/$(database)/documents/users/$(request.auth.uid) in request.resource.data.users;
+      allow read: if /databases/$(database)/documents/users/$(request.auth.uid) in resource.data.users;
+      allow write: if /databases/$(database)/documents/users/$(request.auth.uid) in resource.data.users;
+      allow delete: if false;
+    }
+
+    match /chat_messages/{document} {
+      allow create: if /databases/$(database)/documents/users/$(request.auth.uid) in get(request.resource.data.chat).data.users
+&& /databases/$(database)/documents/users/$(request.auth.uid) == request.resource.data.user;
+      allow read: if /databases/$(database)/documents/users/$(request.auth.uid) in get(resource.data.chat).data.users;
+      allow write: if false;
+      allow delete: if false;
+    }
+  }
+}
