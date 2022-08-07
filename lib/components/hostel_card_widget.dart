@@ -1,4 +1,4 @@
-import 'package:cite_finder/hostel_details/hostel_details_widget.dart';
+import 'package:cite_finder/pages/hostel_details/hostel_details_widget.dart';
 
 import '../backend/backend.dart';
 import '../flutter_flow/flutter_flow_theme.dart';

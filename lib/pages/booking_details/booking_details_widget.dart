@@ -1,17 +1,17 @@
-import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
+import '../../flutter_flow/flutter_flow_theme.dart';
+import '../../flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class ChatsPageWidget extends StatefulWidget {
-  const ChatsPageWidget({Key key}) : super(key: key);
+class BookingDetailsWidget extends StatefulWidget {
+  const BookingDetailsWidget({Key key}) : super(key: key);
 
   @override
-  _ChatsPageWidgetState createState() => _ChatsPageWidgetState();
+  _BookingDetailsWidgetState createState() => _BookingDetailsWidgetState();
 }
 
-class _ChatsPageWidgetState extends State<ChatsPageWidget> {
+class _BookingDetailsWidgetState extends State<BookingDetailsWidget> {
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override

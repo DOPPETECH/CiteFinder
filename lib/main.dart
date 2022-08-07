@@ -8,15 +8,15 @@ import 'auth/auth_util.dart';
 import 'flutter_flow/flutter_flow_util.dart';
 import 'flutter_flow/flutter_flow_theme.dart';
 import 'flutter_flow/internationalization.dart';
-import 'package:cite_finder/on_boarding_page/on_boarding_page_widget.dart';
+import 'package:cite_finder/pages/on_boarding_page/on_boarding_page_widget.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'home_page/home_page_widget.dart';
-import 'profile_page/profile_page_widget.dart';
-import 'bookings_page/bookings_page_widget.dart';
-import 'chats_page/chats_page_widget.dart';
-import 'all_chats_page/all_chats_page_widget.dart';
+import 'pages/home_page/home_page_widget.dart';
+import 'pages/profile_page/profile_page_widget.dart';
+import 'pages/bookings_page/bookings_page_widget.dart';
+import 'pages/chats_page/chats_page_widget.dart';
+import 'pages/all_chats_page/all_chats_page_widget.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
