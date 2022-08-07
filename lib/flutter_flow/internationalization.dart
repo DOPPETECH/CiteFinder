@@ -603,9 +603,9 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // Miscellaneous
   {
-    '4utr4mu9': {
-      'en': '',
-      'fr': '',
+    'favorites': {
+      'en': 'Favorites',
+      'fr': 'Favoris',
     },
     'njdpqkjz': {
       'en': '',

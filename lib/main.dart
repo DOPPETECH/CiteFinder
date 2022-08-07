@@ -1,3 +1,4 @@
+import 'package:cite_finder/pages/favorites_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -135,7 +136,7 @@ class _NavBarPageState extends State<NavBarPage> {
     final tabs = {
       'HomePage': HomePageWidget(),
       'ProfilePage': ProfilePageWidget(),
-      'BookingsPage': BookingsPageWidget(),
+      'FavoritesPage': FavoritesPage(),
       'AllChatsPage': AllChatsPageWidget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPage);
@@ -171,11 +172,10 @@ class _NavBarPageState extends State<NavBarPage> {
           ),
           BottomNavigationBarItem(
             icon: FaIcon(
-              FontAwesomeIcons.bootstrap,
+              FontAwesomeIcons.star,
               size: 25,
             ),
-            label:
-                FFLocalizations.of(context).getText('xirm5px3') /*Bookings */,
+            label: FFLocalizations.of(context).getText('favorites'),
             tooltip: '',
           ),
           BottomNavigationBarItem(

@@ -506,6 +506,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                             msg:
                                                 "Profile updated successfully");
                                       } catch (err) {
+                                        print(err);
                                         showSnackbar(context,
                                             "An error occured while updating user information ");
                                       } finally {
